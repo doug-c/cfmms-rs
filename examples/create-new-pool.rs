@@ -1,4 +1,5 @@
 use std::{error::Error, str::FromStr, sync::Arc};
+use std::env;
 
 use ethers::{
     providers::{Http, Provider},
@@ -9,6 +10,8 @@ use cfmms::{dex::DexVariant, pool::Pool};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
+    let key = "ETHEREUM_MAINNET_ENDPOINT";
+    env::set_var(key, "https://mainnet.infura.io/v3/7d89bf1eb27e4787afbe6abcd94acf73");
     //Add rpc endpoint here:
     let rpc_endpoint = std::env::var("ETHEREUM_MAINNET_ENDPOINT")
         .expect("Could not get ETHEREUM_MAINNET_ENDPOINT");

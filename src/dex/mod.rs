@@ -453,10 +453,14 @@ mod tests {
     use super::{Dex, DexVariant};
 
     #[test]
-    fn test_factory_address() {}
+    fn test_factory_address() {
+        println!("test_factory_address");
+    }
 
     #[test]
-    fn test_get_pool_with_best_liquidity() {}
+    fn test_get_pool_with_best_liquidity() {
+        println!("test_get_pool");
+    }
 
     #[tokio::test]
     async fn test_get_all_pools_for_pair() {

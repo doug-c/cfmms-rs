@@ -1,0 +1,212 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'cfmms'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "cfmms",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'sync-pairs-with-throttle'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=sync-pairs-with-throttle",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "sync-pairs-with-throttle",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'sync-pairs-with-throttle'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=sync-pairs-with-throttle",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "sync-pairs-with-throttle",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'generate-mainnet-checkpoint'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=generate-mainnet-checkpoint",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "generate-mainnet-checkpoint",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'generate-mainnet-checkpoint'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=generate-mainnet-checkpoint",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "generate-mainnet-checkpoint",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'create-new-pool'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=create-new-pool",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "create-new-pool",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'create-new-pool'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=create-new-pool",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "create-new-pool",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'sync-pairs-with-ipc'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=sync-pairs-with-ipc",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "sync-pairs-with-ipc",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'sync-pairs-with-ipc'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=sync-pairs-with-ipc",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "sync-pairs-with-ipc",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'sync-pairs'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=sync-pairs",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "sync-pairs",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'sync-pairs'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=sync-pairs",
+                    "--package=cfmms"
+                ],
+                "filter": {
+                    "name": "sync-pairs",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
